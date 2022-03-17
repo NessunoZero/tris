@@ -85,6 +85,11 @@ const render_board = () => {
     board_container.innerHTML += `<div id="block_${i}" class="block" onclick="addPlayerMove(${i})">${play_board[i]}</div>`
     if (e == player || e == computer) {
       document.querySelector(`#block_${i}`).classList.add("occupied");
+      if(e == player){
+        document.querySelector(`#block_${i}`).classList.add("playerWin")
+      }else{
+        document.querySelector(`#block_${i}`).classList.add("computerWin")
+      }
     }
     if(turn % 2 == 0){
         winner.innerText = `${player}`;

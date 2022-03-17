@@ -102,11 +102,11 @@
   }
   
   .playerWin {
-    color: orange;
+    color: darkcyan;
   }
   
   .computerWin {
-    color: red;
+    color: darkorchid;
   }
   
   .draw {
